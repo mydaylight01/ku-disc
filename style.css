@@ -128,6 +128,11 @@ label {
     width: 100%;
 }
 
+.result {
+    color: midnightblue;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1024px) {
     .choices {
         grid-template-columns: repeat(2, 1fr);
