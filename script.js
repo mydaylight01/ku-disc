@@ -139,19 +139,19 @@ function submit() {
     let textList = [];
     if (selectedCount._1 == maxValue) {
         textList.push(personalityType.red);
-    } 
+    }
     if (selectedCount._2 == maxValue) {
         textList.push(personalityType.yellow);
-    } 
+    }
     if (selectedCount._3 == maxValue) {
         textList.push(personalityType.blue);
-    } 
+    }
     if (selectedCount._4 == maxValue) {
         textList.push(personalityType.green);
     }
 
     let textShow1 = '<label class="result">';
-    console.log('textList.length=',textList.length);
+    console.log('textList.length=', textList.length);
     if (textList.length == 1) {
         textShow1 += textList[0];
     } else {
@@ -160,10 +160,10 @@ function submit() {
 
     textShow1 += '</label>'
 
-    let textShow2 = personalityType.red + ' ' + selectedCount._1 + ' ข้อ<br>' +
-                    personalityType.yellow + ' ' + selectedCount._2 + ' ข้อ<br>' +
-                    personalityType.blue + ' ' + selectedCount._3 + ' ข้อ<br>' +
-                    personalityType.green + ' ' + selectedCount._4 + ' ข้อ<br>';
+    let textShow2 = `${personalityType.red} ${selectedCount._1} ข้อ<br>` +
+        `${personalityType.yellow} ${selectedCount._2} ข้อ<br>` +
+        `${personalityType.blue} ${selectedCount._3} ข้อ<br>` +
+        `${personalityType.green} ${selectedCount._4} ข้อ<br>`;
 
     Swal.fire({
         title: "บุคลิกภาพของคุณคือ",
